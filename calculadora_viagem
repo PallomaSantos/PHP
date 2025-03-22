@@ -1,0 +1,14 @@
+<?php
+    echo "Digite a distância percorrida em quilometros: ";
+    $distancia = (float) readline();
+    echo "Digite o consumo do carro: ";
+    $consumo = (float) readline();
+    echo "Digite o preço do combustível na sua cidade: ";
+    $preco = (float) readline();
+    
+    $litrosnecessarios = $distancia / $consumo;
+    echo "A quantidade de litros necessarios: " .number_format($litrosnecessarios,2);
+    $custototal = $litrosnecessarios * $preco;
+    
+    echo "\nO custo total foi de: ".number_format($custototal,2);
+?>
