@@ -6,9 +6,9 @@ do{
     $senhaFinal = readline();
     
     if ($senha == $senhaFinal){
-        echo " Seja bem vindo! ";}
+        echo " Acesso liberado! ";}
     else {
-        echo "\n Senha inválida, tente novamente.";
+        echo "\n Senha incorreta! Tente novamente.";
     }}
 while($senha != $senhaFinal);
     
